@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt-get update
 RUN apt-get install -y apache2
-RUN sed -i "s/#ServerName www.example.com/ServerName opkoko2015.timberline.se/" /etc/apache2/sites-available/000-default.conf
+RUN sed -i "s/#ServerName www.example.com/ServerName owasp.timberline.se/" /etc/apache2/sites-available/000-default.conf
 RUN apt-get install -y git
 RUN git clone https://www.github.com/letsencrypt/letsencrypt.git
 WORKDIR /letsencrypt
